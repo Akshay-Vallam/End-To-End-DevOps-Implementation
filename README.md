@@ -934,6 +934,7 @@ If one of the Docker containers goes down, and even if it is restarted instantly
 Utilize the `k8s-manifests` directory or `kubernetes` folder in demo project files which have `deploy.yaml` and `svc.yaml` files for all microservices separately (or) `complete-deploy.yaml` (for complete yaml files that includes `deploy.yaml` & `svc.yaml` of all microservices) and `serviceaccount.yaml` (for service account creation) for all microservices together (split with --- symbol).
 
 For `deploy.yaml` in yaml files, Kubernetes requires the following to understand the resources:
+```
  - apiversion:
  - kind: Deployment
  - metadata:
@@ -952,8 +953,10 @@ For `deploy.yaml` in yaml files, Kubernetes requires the following to understand
       - ports:
       - env: (will be given by developers)
       - volumes:  
+```
 
 For `svc.yaml` in yaml files, Kubernetes requires the following to understand the resources:
+```
  - apiversion:
  - kind: Service
  - metadata:
@@ -965,6 +968,7 @@ For `svc.yaml` in yaml files, Kubernetes requires the following to understand th
      - port:
      - target port:
    - selector: (label of pod resource/deployment template)
+```
 
 To deploy the project on kubernetes the following commands are used:
 
