@@ -1278,9 +1278,6 @@ Now verify if we are able to access the project through example.com domain
 
 ## 10. Custom Domain Configuration for the Project
 
-![Route53 Image](Images/route53_image.png)
-*Image Credit: iconbuddy.com*
-
 Domain could be brought from any website based on your preference (like gogaddy.com, hostinger.com etc.). Now the new domain and LoadBalancer DNS can be connected vis **Route 53** on AWS Management Console.
 
 Go to Route 53 > Select Hosted Zone > To create a new hosted zone.
