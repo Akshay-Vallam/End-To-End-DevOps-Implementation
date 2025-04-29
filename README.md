@@ -94,7 +94,7 @@ This project consists of the following 20+ microservices:
 
 ## 3. Installations and Prerequisites
 
-![AWS Image](Images/aws_image.jpg)
+![AWS Image](Images/aws_image.png)
 *Image Credit: blurify.com*
 
 ### **EC2 Instance in AWS / Windows Subsystem for Linux (WSL) in Local**
@@ -1271,7 +1271,7 @@ Now verify if we are able to access the project through example.com domain
 
 ## 10. Custom Domain Configuration for the Project
 
-![Route53 Image](Images/route53_image.png)
+![Route53 Image](images/route53_image.png)
 *Image Credit: iconbuddy.com*
 
 Domain could be brought from any website based on your preference (like gogaddy.com, hostinger.com etc.). Now the new domain and LoadBalancer DNS can be connected vis **Route 53** on AWS Management Console.
@@ -1345,7 +1345,7 @@ Create a new GitHub repository in your Github account and upload all the files l
 
 ## 11. CI/CD Pipelines Implementation
 
-![CICD Image](Images/cicd_image.jpg)
+![CICD Image](images/cicd_image.jpg)
 *Image Credit: medium.com*
 
 ### CI/CD Overview
