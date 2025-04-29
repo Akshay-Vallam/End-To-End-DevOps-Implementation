@@ -1066,6 +1066,7 @@ nslookup <External IP:Port>
 The project should be accessed only through domain name (Domain name purchasing process in section 10), which can be solved with Routing Rules. Ingress defines routing rules for incoming traffic to the clusters which are to be read by Ingress Controller (Nginx, Kong, ALB etc) to create appropriate Load Balancer (Nginx, Kong, ALB etc). Ingress, Ingress Controller, LoadBalancer are created for the microservice which has to be exposed to internet (Frontend in this case)
 
 For ingress resource in yaml files, Kubernetes requires the following to understand the resources:
+```
  - apiversion: networking.k8s.io/v1
  - kind: Ingress
  - metadata:
@@ -1081,6 +1082,7 @@ For ingress resource in yaml files, Kubernetes requires the following to underst
          - service:
            - name:
            - port:
+```
 
 ### Access project from external world using Ingress & Ingress Controller:
 
@@ -1507,8 +1509,8 @@ jobs:
 
         - name: commit and push changes
           run: |
-                git config --global user.email "your-email-id"
-                git config --global user.name "your-username"
+                git config --global user.email "<your-email-id>"
+                git config --global user.name "<your-username>"
                 git add kubernetes/productcatalog/deploy.yaml
                 git commit -m "[CI]: Update product catalog image tag"
                 git push origin HEAD:main -f
