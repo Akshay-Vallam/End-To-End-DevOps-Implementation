@@ -782,6 +782,7 @@ Note: Provider configuration is not mentioned in modules as they are not used fo
 For the actual execution, create  `main.tf`, `variables.tf` & `outputs.tf` files in **eks_install** to invoke both the modules from this single place.
 
 For actual execution the following resource blocks are required in the terraform code:
+```
  - Required Providers
  - Backend Configuration for S3 bucket & DynamoDB
  - Provider
@@ -793,7 +794,7 @@ For actual execution the following resource blocks are required in the terraform
     - EKS
       - Source - Location of the VPC terraform file
       - Variables - Already defined for invocation
-
+```
 
 In WSL/EC2 instance, Change the directory to **eks-install** directory and run the below commands:
 ```
